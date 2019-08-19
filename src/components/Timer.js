@@ -1,12 +1,11 @@
 import React from 'react'
 import  timerStyles from './timer.module.css'
 
-const Timer = ({ handlePlay, handleReset, timeLeft }) => {
+const Timer = (props) => {
     return (
         <div className={timerStyles.timer}>
-        <p>Timer: sess/break: {timeLeft.format('mm:ss')}</p>
-        <button onClick={handlePlay} >play/pause</button>
-        <button onClick={handleReset} >reset</button>
+        <h2>{props.isSession ? 'Session!' : 'Break!'}</h2>
+        <h2>{props.timeLeft.format('mm:ss')}</h2>
         </div>
 
     )

@@ -1,0 +1,18 @@
+.setters {
+    background: #A44EFA;
+    max-width: 150px;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.settersSet:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    .setters {
+        flex-basis: 25%;
+    }
+}
