@@ -5,7 +5,7 @@ import Timer from '../components/Timer'
 import Controls from '../components/Controls'
 import moment from 'moment'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
+import { faUserClock } from '@fortawesome/free-solid-svg-icons'
 
 class App extends React.Component {
   constructor(props) {
@@ -94,7 +94,7 @@ class App extends React.Component {
   render() {
     const { breakLength, sessionLength, timeLeft, isSession, sessionsDone } = this.state
     const description = sessionsDone.length !== 0 ? (
-      sessionsDone.map((s, i) => i % 2 === 0 ? <span><FontAwesomeIcon key={i} icon={faCheckSquare} /></span> : null)
+      sessionsDone.map((s, i) => i % 2 === 0 ? <span><FontAwesomeIcon key={i} icon={faUserClock} /></span> : null)
     ) : `Let's get started!`
     return (
       <div className="App">
