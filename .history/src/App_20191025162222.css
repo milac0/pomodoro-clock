@@ -3,6 +3,10 @@
   max-width: 750px;
 }
 
+.App h1, h2 {
+  font-color: #000;
+}
+
 h2 {
   margin-top: 0;
 }
@@ -13,16 +17,10 @@ h1 {
 
 .session-icon {
   padding-right: 0.5em;
-  color: #7F00FF;
-}
-
-.settings {
-  margin-top: 0;
 }
 
 @media (min-width: 600px){
   .settings {
-    margin-top: 20vh;
     display: flex;
     align-items: center;
    }

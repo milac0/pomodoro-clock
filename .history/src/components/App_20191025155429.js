@@ -94,7 +94,7 @@ class App extends React.Component {
   render() {
     const { breakLength, sessionLength, timeLeft, isSession, sessionsDone } = this.state
     const description = sessionsDone.length !== 0 ? (
-      sessionsDone.map((s, i) => i % 2 === 0 ? <span><FontAwesomeIcon className="session-icon" key={i} icon={faUserClock} /></span> : null)
+      sessionsDone.map((s, i) => i % 2 === 0 ? <span><FontAwesomeIcon key={i} icon={faUserClock} /></span> : null)
     ) : `Let's get started!`
     return (
       <div className="App">
